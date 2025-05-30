@@ -22,9 +22,9 @@ const Result = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-dark p-4">
-      <div className="bg-primary p-8 rounded-lg shadow-lg w-full max-w-md text-center">
-        <h1 className="text-3xl font-bold text-secondary mb-6">Quiz Results</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 px-4">
+      <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md mx-auto text-center">
+        <h1 className="text-3xl font-semibold text-teal-400 mb-6">Quiz Results</h1>
         <p className="text-lg mb-4">Hello, {user?.username}!</p>
         <p className="text-lg mb-2">Total Questions: {questions.length}</p>
         <p className="text-lg mb-2">Answered: {answers.length}</p>
@@ -32,13 +32,13 @@ const Result = () => {
         <p className="text-lg mb-6 text-red-400">Wrong: {wrongAnswers}</p>
         <button
           onClick={handlePlayAgain}
-          className="w-full bg-secondary text-dark font-bold py-3 rounded hover:bg-accent transition duration-300 mb-4"
+          className="w-full bg-teal-500 text-white font-semibold py-3 rounded hover:bg-teal-600 transition duration-300 mb-4"
         >
           Play Again
         </button>
         <button
           onClick={handleLogout}
-          className="w-full bg-gray-600 text-white font-bold py-3 rounded hover:bg-gray-700 transition duration-300"
+          className="w-full bg-gray-600 text-white font-semibold py-3 rounded hover:bg-gray-700 transition duration-300"
         >
           Logout
         </button>

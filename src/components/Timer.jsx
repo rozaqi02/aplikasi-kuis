@@ -5,7 +5,7 @@ const Timer = ({ time }) => {
   const seconds = time % 60;
 
   return (
-    <div className="text-xl font-bold text-secondary bg-gray-800 p-3 rounded-lg">
+    <div className="text-lg font-semibold text-teal-400 bg-gray-700 p-3 rounded-lg">
       Time Left: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
     </div>
   );
