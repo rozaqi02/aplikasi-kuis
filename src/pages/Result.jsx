@@ -22,25 +22,24 @@ const Result = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 px-4">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md mx-auto text-center">
-        <h1 className="text-3xl font-semibold text-teal-400 mb-6">Quiz Results</h1>
-        <p className="text-lg mb-4">Hello, {user?.username}!</p>
-        <p className="text-lg mb-2">Total Questions: {questions.length}</p>
-        <p className="text-lg mb-2">Answered: {answers.length}</p>
-        <p className="text-lg mb-2 text-green-400">Correct: {correctAnswers}</p>
-        <p className="text-lg mb-6 text-red-400">Wrong: {wrongAnswers}</p>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 px-4">
+      <div className="bg-gray-800 p-8 rounded-xl shadow-2xl w-full max-w-md mx-auto text-center slide-up">
+        <h1 className="text-4xl font-semibold text-teal-400 mb-6">Hasil Kuis</h1>
+        <p className="text-lg mb-2">Total Soal: {questions.length}</p>
+        <p className="text-lg mb-2">Dijawab: {answers.length}</p>
+        <p className="text-lg mb-2 text-green-400">Benar: {correctAnswers}</p>
+        <p className="text-lg mb-6 text-red-400">Salah: {wrongAnswers}</p>
         <button
           onClick={handlePlayAgain}
-          className="w-full bg-teal-500 text-white font-semibold py-3 rounded hover:bg-teal-600 transition duration-300 mb-4"
+          className="w-full bg-teal-500 text-white font-semibold py-3 rounded-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-105 mb-4"
         >
-          Play Again
+          Main Lagi
         </button>
         <button
           onClick={handleLogout}
-          className="w-full bg-gray-600 text-white font-semibold py-3 rounded hover:bg-gray-700 transition duration-300"
+          className="w-full bg-gray-600 text-white font-semibold py-3 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105"
         >
-          Logout
+          Keluar
         </button>
       </div>
     </div>
